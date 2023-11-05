@@ -1,7 +1,3 @@
-<?php use App\Http\Controllers\LoginController; ?>
-
-    <!DOCTYPE html>
-<html>
 <head>
     <title>Login Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/css/bootstrap.min.css">
@@ -38,19 +34,5 @@
         </div>
     </div>
 </div>
-
-<script>
-    $(document).ready(function () {
-        $('#changeColorButton').click(function () {
-            $.ajax({
-                type: "GET",
-                url: '/ajax-request',
-                success: function (response) {
-                    $('body').css('background-color', response.color);
-                }
-            });
-        });
-    });
-</script>
+<script src="{{ asset('js/main.js') }}"></script>
 </body>
-</html>
