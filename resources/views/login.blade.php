@@ -25,9 +25,13 @@
                             <label for="username" class="form-label">Username</label>
                             <input type="text" name="username" id="username" class="form-control" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
-                        <a href="{{ route('register') }}" class="btn btn-primary">Register</a>
-                        <button type="button" class="btn btn-info" id="changeColorButton">Change Color</button>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="{{ route('register') }}">Register here</a>
+                            <div class="button-wrap">
+                                <button type="button" class="btn btn-info" id="changeColorButton">Change Color</button>
+                                <button type="submit" class="btn btn-primary justify-content-end ml-2">Login</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
