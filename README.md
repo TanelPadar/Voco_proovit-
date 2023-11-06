@@ -12,6 +12,7 @@ Before you start, make sure you have the following:
 - PHP and Composer installed
 - Docker installed for the MySQL database
 - **Note! If you don't want to use Docker, you can also use your local database, and I've created a script called create_database_and_table.sql to simplify the process.**
+  **In that case, dont forgot to change database properties in .env file.**
 
 ## Setup
 
